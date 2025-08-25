@@ -1,0 +1,8 @@
+<view class = 'container'>
+    <image src='{{src}}' mode = 'widthFix'></image>
+    <view class='getName'>
+    <view wx:if="{{name}}">{{name}}</view>
+    <input wx:else type="nickname" bindinput="getName" style="border:1px solid grey;" />
+  </view>
+    <button open-type="chooseAvatar" bind:chooseavatar="onChooseAvatar">点击获取头像和昵称</button>
+</view>
